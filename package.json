@@ -1,0 +1,25 @@
+{
+  "name": "builder-react-fullstack",
+  "version": "0.0.0",
+  "description": "Builder Archetype - React Fullstack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hourliert/builder-react-fullstack.git"
+  },
+  "keywords": [
+    "builder",
+    "archetype",
+    "react",
+    "fullstack"
+  ],
+  "author": "Thomas Hourlier <hourliert@gmail.com> (https://github.com/hourliert)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hourliert/builder-react-fullstack/issues"
+  },
+  "homepage": "https://github.com/hourliert/builder-react-fullstack#readme"
+}
