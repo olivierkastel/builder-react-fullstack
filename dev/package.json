@@ -1,0 +1,39 @@
+{
+  "name": "builder-react-fullstack-dev",
+  "version": "0.0.0",
+  "description": "Builder Archetype - React Fullstack (Development)",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hourliert/builder-react-fullstack.git"
+  },
+  "keywords": [
+    "builder",
+    "archetype",
+    "react",
+    "fullstack"
+  ],
+  "author": "Thomas Hourlier <hourliert@gmail.com> (https://github.com/hourliert)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hourliert/builder-react-fullstack/issues"
+  },
+  "homepage": "https://github.com/hourliert/builder-react-fullstack#readme",
+  "dependencies": {
+    "babel-eslint": "^5.0.0",
+    "browser-sync": "^2.9.11",
+    "eslint": "2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "eslint-config-react": "^1.1.1",
+    "eslint-plugin-react": "^4.1.0",
+    "jscs": "^2.11.0",
+    "mocha": "^2.4.5",
+    "react-transform-hmr": "^1.0.2"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "istanbul": ">=1.0.0-alpha",
+    "react": ">=0.14.7"
+  }
+}
