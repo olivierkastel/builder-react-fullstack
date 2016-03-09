@@ -4,17 +4,19 @@
   "description": "Builder Archetype - React Fullstack",
   "main": "index.js",
   "scripts": {
+    "builder:compile": "babel scripts --out-dir lib",
     "builder:gen-dev": "builder-support gen-dev",
+    "prepublish": "npm run builder:compile",
     "eslint": "eslint --color -c node_modules/builder-react-fullstack/config/eslint/.eslintrc src/**/*.js",
     "jscs": "jscs -c node_modules/builder-react-fullstack/config/jscs/.jscsrc src/**/*.js",
     "lint": "builder concurrent eslint jscs",
     "test": "NODE_PATH=./src:$NODE_PATH mocha --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts src/**/*-test.js",
     "test:watch": "NODE_PATH=./src:$NODE_PATH mocha --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.watch src/**/*-test.js",
-    "coverage": "NODE_PATH=./src:$NODE_PATH babel-node ./node_modules/.bin/istanbul cover --config node_modules/builder-react-fullstack/config/istanbul/.istanbul.yml _mocha -- --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.coverage src/**/*-test.js",
-    "bundle": "babel-node node_modules/builder-react-fullstack/scripts/runner bundle",
-    "build": "babel-node node_modules/builder-react-fullstack/scripts/runner build",
-    "serve": "babel-node node_modules/builder-react-fullstack/scripts/runner serve",
-    "release": "babel-node node_modules/builder-react-fullstack/scripts/runner release"
+    "coverage": "NODE_PATH=./src:$NODE_PATH babel-node node_modules/.bin/istanbul cover --config node_modules/builder-react-fullstack/config/istanbul/.istanbul.yml _mocha -- --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.coverage src/**/*-test.js",
+    "bundle": "node node_modules/builder-react-fullstack/lib/runner bundle",
+    "build": "node node_modules/builder-react-fullstack/lib/runner build",
+    "serve": "node node_modules/builder-react-fullstack/lib/runner serve",
+    "release": "node node_modules/builder-react-fullstack/lib/runner release"
   },
   "repository": {
     "type": "git",
