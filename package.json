@@ -1,6 +1,6 @@
 {
   "name": "builder-react-fullstack",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Builder Archetype - React Fullstack",
   "main": "index.js",
   "scripts": {
