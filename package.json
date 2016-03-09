@@ -13,7 +13,8 @@
     "coverage": "NODE_PATH=./src:$NODE_PATH babel-node ./node_modules/.bin/istanbul cover --config node_modules/builder-react-fullstack/config/istanbul/.istanbul.yml _mocha -- --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.coverage src/**/*-test.js",
     "bundle": "babel-node node_modules/builder-react-fullstack/scripts/runner bundle",
     "build": "babel-node node_modules/builder-react-fullstack/scripts/runner build",
-    "serve": "babel-node node_modules/builder-react-fullstack/scripts/runner serve"
+    "serve": "babel-node node_modules/builder-react-fullstack/scripts/runner serve",
+    "release": "babel-node node_modules/builder-react-fullstack/scripts/runner release"
   },
   "repository": {
     "type": "git",
@@ -65,8 +66,5 @@
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "replace": "^0.3.0"
-  },
-  "peerDependencies": {
-    "webpack": ">=1.12"
   }
 }

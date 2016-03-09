@@ -33,7 +33,6 @@
   },
   "devDependencies": {},
   "peerDependencies": {
-    "istanbul": ">=1.0.0-alpha",
-    "react": ">=0.14.7"
+    "istanbul": ">=1.0.0-alpha"
   }
 }
