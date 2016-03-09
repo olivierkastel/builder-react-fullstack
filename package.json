@@ -1,6 +1,6 @@
 {
   "name": "builder-react-fullstack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Builder Archetype - React Fullstack",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/hourliert/builder-react-fullstack#readme",
   "dependencies": {
+    "babel-cli": "^6.5.0",
     "babel-core": "^6.5.0",
     "babel-loader": "^6.2.0",
     "babel-plugin-add-module-exports": "^0.1.1",
@@ -54,7 +55,6 @@
     "webpack-split-by-path": "0.0.8"
   },
   "devDependencies": {
-    "babel-cli": "^6.5.0",
     "babel-eslint": "^5.0.0",
     "builder-support": "^0.3.0",
     "del": "^2.0.2",
