@@ -1,12 +1,12 @@
 {
   "name": "builder-react-fullstack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Builder Archetype - React Fullstack",
   "main": "lib/index.js",
   "scripts": {
     "builder:compile": "rm -rf lib && babel index.js --out-dir lib/ && babel scripts --out-dir lib/scripts && babel config --out-dir lib/config",
     "builder:gen-dev": "builder-support gen-dev",
-    "npm:prepublish": "npm run builder:compile",
+    "prepublish": "npm run builder:compile",
     "eslint": "eslint --color -c node_modules/builder-react-fullstack/config/eslint/.eslintrc src/**/*.js",
     "jscs": "jscs -c node_modules/builder-react-fullstack/config/jscs/.jscsrc src/**/*.js",
     "lint": "builder concurrent eslint jscs",
