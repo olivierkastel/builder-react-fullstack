@@ -1,4 +1,4 @@
-import { copyFile } from './lib/fs';
+import { copyFile } from './helpers/fs';
 import replace from 'replace';
 
 /**

@@ -1,5 +1,5 @@
 import del from 'del';
-import { makeDir } from './lib/fs';
+import { makeDir } from './helpers/fs';
 
 /**
  * Cleans up the output (build) directory.

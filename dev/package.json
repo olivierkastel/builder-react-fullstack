@@ -2,7 +2,7 @@
   "name": "builder-react-fullstack-dev",
   "version": "0.0.5",
   "description": "Builder Archetype - React Fullstack (Development)",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -22,14 +22,12 @@
   "homepage": "https://github.com/hourliert/builder-react-fullstack#readme",
   "dependencies": {
     "babel-eslint": "^5.0.0",
-    "browser-sync": "^2.9.11",
     "eslint": "2.2.0",
     "eslint-config-airbnb": "^6.0.2",
     "eslint-config-react": "^1.1.1",
     "eslint-plugin-react": "^4.1.0",
     "jscs": "^2.11.0",
-    "mocha": "^2.4.5",
-    "react-transform-hmr": "^1.0.2"
+    "mocha": "^2.4.5"
   },
   "devDependencies": {},
   "peerDependencies": {

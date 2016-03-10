@@ -1,6 +1,6 @@
 import semver from 'semver';
-import { readFile, writeFile } from './lib/fs';
-import { execCmd } from './lib/cp';
+import { readFile, writeFile } from './helpers/fs';
+import { execCmd } from './helpers/cp';
 
 const ROOT = process.cwd();
 
