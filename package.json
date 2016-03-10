@@ -1,6 +1,6 @@
 {
   "name": "builder-react-fullstack",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Builder Archetype - React Fullstack",
   "main": "lib/index.js",
   "scripts": {
@@ -56,19 +56,19 @@
     "webpack-hot-middleware": "^2.2.0",
     "webpack-isomorphic-tools": "^2.2.26",
     "webpack-middleware": "^1.5.1",
-    "webpack-split-by-path": "0.0.8"
+    "webpack-split-by-path": "0.0.8",
+    "del": "^2.0.2",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "replace": "^0.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
     "builder-support": "^0.3.0",
-    "del": "^2.0.2",
     "eslint": "2.2.0",
     "eslint-config-airbnb": "^6.0.2",
     "eslint-config-react": "^1.1.1",
     "eslint-plugin-react": "^4.1.0",
-    "jscs": "^2.11.0",
-    "mkdirp": "^0.5.1",
-    "ncp": "^2.0.0",
-    "replace": "^0.3.0"
+    "jscs": "^2.11.0"
   }
 }
