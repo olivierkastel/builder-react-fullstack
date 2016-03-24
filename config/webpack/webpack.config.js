@@ -57,6 +57,7 @@ const commonConfig = {
   resolve: {
     root: resolve(ROOT),
     alias: webpackAlias,
+    fallback: join(ROOT, 'node_modules'),
   },
 
   cache: DEBUG,
