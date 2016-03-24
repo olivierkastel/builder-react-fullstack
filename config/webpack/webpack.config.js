@@ -81,6 +81,12 @@ const commonConfig = {
   ],
 
   module: {
+    preLoaders: [
+      DEBUG ? {
+        test: /\.jsx?$/,
+        loader: require.resolve('source-map-loader'),
+      } : null,
+    ].filter(x => !!x),
     loaders: [
       {
         test: /\.json$/,
@@ -148,6 +154,7 @@ const appConfig = Object.assign({}, commonConfig, {
   ],
 
   module: {
+    ...commonConfig.module,
     loaders: [
       WATCH ? {
         ...JS_LOADER,
@@ -225,6 +232,7 @@ const serverConfig = Object.assign({}, commonConfig, {
   ],
 
   module: {
+    ...commonConfig.module,
     loaders: [
       JS_LOADER,
       ...commonConfig.module.loaders,
