@@ -1,6 +1,6 @@
 {
   "name": "builder-react-fullstack",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Builder Archetype - React Fullstack",
   "main": "lib/index.js",
   "scripts": {
@@ -39,7 +39,6 @@
     "babel-core": "^6.5.0",
     "babel-loader": "^6.2.0",
     "babel-plugin-add-module-exports": "^0.1.1",
-    "babel-plugin-react-transform": "^2.0.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-polyfill": "^6.5.0",
     "babel-preset-es2015": "^6.5.0",
@@ -52,7 +51,6 @@
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "raw-loader": "^0.5.1",
-    "react-transform-hmr": "^1.0.2",
     "replace": "^0.3.0",
     "semver": "^5.1.0",
     "source-map-loader": "^0.1.5",
@@ -66,7 +64,7 @@
   "devDependencies": {
     "babel-eslint": "^5.0.0",
     "builder-support": "^0.3.0",
-    "eslint": "2.2.0",
+    "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.0.2",
     "eslint-config-react": "^1.1.1",
     "eslint-plugin-react": "^4.1.0",
