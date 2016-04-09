@@ -1,6 +1,6 @@
 {
   "name": "builder-react-fullstack",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Builder Archetype - React Fullstack",
   "main": "lib/index.js",
   "scripts": {
@@ -62,7 +62,7 @@
     "webpack-split-by-path": "0.0.8"
   },
   "devDependencies": {
-    "babel-eslint": "^5.0.0",
+    "babel-eslint": "^6.0.0",
     "builder-support": "^0.3.0",
     "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.0.2",
