@@ -109,7 +109,7 @@ const commonConfig = {
 
 // Client specific config. We merge the new config with the common config.
 const appConfig = Object.assign({}, commonConfig, {
-  devtool: DEBUG ? 'cheap-module-eval-source-map' : false,
+  devtool: DEBUG ? '#cheap-module-eval-source-map' : false,
 
   entry: {
     client: [
