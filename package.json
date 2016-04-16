@@ -4,7 +4,7 @@
   "description": "Builder Archetype - React Fullstack",
   "main": "lib/index.js",
   "scripts": {
-    "builder:compile": "rm -rf lib && babel index.js --out-dir lib/ && babel scripts --out-dir lib/scripts && babel config --out-dir lib/config",
+    "builder:compile": "rm -rf lib && babel index.js runner.js --out-dir lib/ && babel scripts --out-dir lib/scripts && babel config --out-dir lib/config",
     "builder:gen-dev": "builder-support gen-dev",
     "prepublish": "npm run builder:compile",
     "eslint": "eslint --color src/**/*.js",
@@ -13,10 +13,10 @@
     "test:all": "NODE_PATH=./src:$NODE_PATH mocha --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts src/**/*-test.js",
     "test:all:watch": "NODE_PATH=./src:$NODE_PATH mocha --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.watch src/**/*-test.js",
     "test:all:coverage": "NODE_PATH=./src:$NODE_PATH babel-node node_modules/.bin/istanbul cover --config node_modules/builder-react-fullstack/config/istanbul/.istanbul.yml _mocha -- --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.coverage src/**/*-test.js",
-    "bundle": "node node_modules/builder-react-fullstack/lib/index bundle",
-    "build": "node node_modules/builder-react-fullstack/lib/index build",
-    "serve": "node node_modules/builder-react-fullstack/lib/index serve",
-    "release": "node node_modules/builder-react-fullstack/lib/index release"
+    "bundle": "node node_modules/builder-react-fullstack/lib/runner bundle",
+    "build": "node node_modules/builder-react-fullstack/lib/runner build",
+    "serve": "node node_modules/builder-react-fullstack/lib/runner serve",
+    "release": "node node_modules/builder-react-fullstack/lib/runner release"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,4 @@
 --require node_modules/builder-react-fullstack/config/mocha/null-compiler
---require babel-polyfill
 --timeout 20000
 --colors
 --recursive

@@ -1,1 +1,1 @@
-export { default as runner } from './scripts';
+export makeIsomorphicConfig from './config/webpack/webpack.isomorphic.config';

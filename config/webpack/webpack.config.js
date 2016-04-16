@@ -3,7 +3,7 @@ import { readdirSync } from 'fs';
 import webpack from 'webpack';
 import IsomorphicToolsPlugin from 'webpack-isomorphic-tools/plugin';
 import SplitByPathPlugin from 'webpack-split-by-path';
-import makeIsomorphicConfig, { alias } from './webpack.isomorphic.config';
+import makeIsomorphicConfig from './webpack.isomorphic.config';
 
 const REGULAR_EXPRESSION = 'regular_expression';
 const ROOT = process.cwd();
@@ -34,10 +34,6 @@ const JS_LOADER = {
 };
 
 const context = join(resolve(ROOT), './src');
-const webpackAlias = Object.keys(alias).reduce((cur, k) => ({
-  ...cur,
-  [k]: join(context, alias[k]),
-}), {});
 
 const isomorphicToolsPlugin = new IsomorphicToolsPlugin(
   makeIsomorphicConfig(context)
@@ -55,8 +51,7 @@ const commonConfig = {
   },
 
   resolve: {
-    root: resolve(ROOT),
-    alias: webpackAlias,
+    root: context,
     fallback: join(ROOT, 'node_modules'),
   },
 
