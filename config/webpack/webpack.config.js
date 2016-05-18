@@ -12,6 +12,7 @@ const DEBUG = !process.argv.includes('--release');
 const ONBUILD_REDUX_DEVTOOLS = process.argv.includes('--devtools');
 const ONBUILD_REACT_PERF = process.argv.includes('--react-perf');
 const ONBUILD_SERVER_RENDERING = process.argv.includes('--isomorphic');
+const POLYFILL = !process.argv.includes('--no-polyfill');
 const VERBOSE = process.argv.includes('--verbose');
 const WATCH = process.argv.includes('serve');
 
@@ -19,6 +20,7 @@ const GLOBALS = {
   __ONBUILD_SERVER_RENDERING__: ONBUILD_SERVER_RENDERING || DEBUG,
   __ONBUILD_REDUX_DEVTOOLS__: ONBUILD_REDUX_DEVTOOLS || DEBUG,
   __ONBUILD_REACT_PERF__: ONBUILD_REACT_PERF || DEBUG,
+  __POLYFILL__: POLYFILL,
   'process.env.NODE_ENV': DEBUG ? '"development"' : '"production"',
   __DEVELOPMENT__: DEBUG,
   __PRODUCTION__: !DEBUG,
@@ -108,7 +110,7 @@ const appConfig = Object.assign({}, commonConfig, {
 
   entry: {
     client: [
-      require.resolve('babel-polyfill'),
+      ...(POLYFILL ? [require.resolve('babel-polyfill')] : []),
       ...(WATCH ? [require.resolve('webpack-hot-middleware/client')] : []),
       './clientEntry.js',
     ],
@@ -180,7 +182,7 @@ const serverConfig = Object.assign({}, commonConfig, {
 
   entry: {
     server: [
-      require.resolve('babel-polyfill'),
+      ...(POLYFILL ? [require.resolve('babel-polyfill')] : []),
       './serverEntry.js',
     ],
   },
