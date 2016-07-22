@@ -10,7 +10,7 @@ export default async function copy() {
   await copyFile('./src/images/favicon/favicon.ico', './build/public/favicon.ico');
 
   replace({
-    regex: '"start".*',
+    regex: '"start": ".+"',
     replacement: '"start": "node server.js"',
     paths: ['build/package.json'],
     recursive: false,
