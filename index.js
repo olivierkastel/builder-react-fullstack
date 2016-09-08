@@ -1,1 +1,1 @@
-export makeIsomorphicConfig from './config/webpack/webpack.isomorphic.config';
+export { default } from './config/webpack/webpack.isomorphic.config';

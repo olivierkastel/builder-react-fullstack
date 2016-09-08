@@ -11,4 +11,4 @@ export default async function build() {
   await runner(clean);
   await runner(copy);
   await runner(bundle);
-}
+};

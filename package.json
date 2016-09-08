@@ -10,9 +10,9 @@
     "eslint": "eslint --color src/**/*.js",
     "jscs": "jscs src/**/*.js",
     "lint": "builder concurrent eslint jscs",
-    "test:all": "NODE_PATH=./src:$NODE_PATH mocha --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts src/**/*-test.js",
-    "test:all:watch": "NODE_PATH=./src:$NODE_PATH mocha --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.watch src/**/*-test.js",
-    "test:all:coverage": "NODE_PATH=./src:$NODE_PATH babel-node node_modules/.bin/istanbul cover --config node_modules/builder-react-fullstack/config/istanbul/.istanbul.yml _mocha -- --opts node_modules/builder-react-fullstack/config/mocha/mocha.opts.coverage src/**/*-test.js",
+    "test:all": "jest --config node_modules/builder-react-fullstack/config/jest/config.json --colors",
+    "test:all:watch": "jest --config node_modules/builder-react-fullstack/config/jest/config.json --watch --colors",
+    "test:all:coverage": "jest --config node_modules/builder-react-fullstack/config/jest/config.coverage.json --colors",
     "bundle": "node node_modules/builder-react-fullstack/lib/runner bundle",
     "build": "node node_modules/builder-react-fullstack/lib/runner build",
     "serve": "node node_modules/builder-react-fullstack/lib/runner serve",
@@ -41,7 +41,7 @@
     "babel-plugin-add-module-exports": "^0.1.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-polyfill": "^6.5.0",
-    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-latest": "^6.14.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "browser-sync": "^2.9.11",
@@ -62,12 +62,14 @@
     "webpack-split-by-path": "0.0.8"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.0",
+    "babel-eslint": "^6.1.2",
     "builder-support": "^0.3.0",
-    "eslint": "^2.4.0",
-    "eslint-config-airbnb": "^6.0.2",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
     "eslint-config-react": "^1.1.1",
-    "eslint-plugin-react": "^4.1.0",
-    "jscs": "^2.11.0"
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0",
+    "jscs": "^3.0.0"
   }
 }

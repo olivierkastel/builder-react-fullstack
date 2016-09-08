@@ -1,4 +1,0 @@
---require node_modules/builder-react-fullstack/config/mocha/null-compiler
---timeout 20000
---colors
---recursive

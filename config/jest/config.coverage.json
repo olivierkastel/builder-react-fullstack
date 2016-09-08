@@ -1,0 +1,4 @@
+{
+ "testPathDirs": ["src"],
+ "collectCoverage": true
+}

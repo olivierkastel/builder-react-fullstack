@@ -1,4 +1,7 @@
 {
   "extends": "airbnb",
+  "rules": {
+    "generator-star-spacing": 0
+  },
   "parser": "babel-eslint"
 }
